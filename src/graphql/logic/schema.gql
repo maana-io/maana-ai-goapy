@@ -289,7 +289,7 @@ type Query {
     Given a goap model, replace all occurences of a variable with one of the same type, but a different name.
     If the replacement would result in an ill formed model, then return null, otherwise return the new model.
     """
-    renameVariable( model: GoapModelInput!, oldId: ID!, newId: ID!): Boolean!
+    renameVariable( model: GoapModelInput!, oldId: ID!, newId: ID!): GoapModel
     
     """ Given a goap model, replace all occurences of a variable with one of the same name, but a different type.  
     If the replacement would result in an ill formed model, then return null, otherwise return the new model.
